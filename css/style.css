@@ -3,37 +3,71 @@
     padding: 0;
 }
 
-.navegacao {
-    background: #043C7B;
-    height: 4vw;
-    text-align: center;
+nav {
+    height: 80px;
+}
+
+nav .navegacao {
     display: flex;
+    background: #043C7B;
+    height: 85%;
+    text-align: center;
     justify-content: center;
 }
 
-.divisornav {
-    height: 1vw;
-    background-color: #096CDA;
+nav .navegacao .btns-navegacao {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
 }
 
-button {
+nav .navegacao .btns-navegacao button {
     background-color: rgba(0, 0, 0, 0);
     border: none;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
-a {
+nav .navegacao .btns-navegacao button a {
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 1.2rem;
     color: #fff;
 }
 
-a:hover {
+nav .navegacao .btns-navegacao button a:hover {
     color: rgb(199, 208, 255);
     text-decoration: none;
     border-color: aqua;
 }
+
+nav .divisornav {
+    height: 15%;
+    background-color: #096CDA;
+}
+
+@media screen and (max-width: 820px) {
+    nav {
+        height: 70px;
+    }
+
+    nav .navegacao .btns-navegacao {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    nav {
+        height: 70px;
+    }
+
+    nav .navegacao .btns-navegacao {
+        width: 60%;
+    }
+
+    nav .navegacao .btns-navegacao button a {
+        font-size: 1rem;
+    }
+}
+
 
 .titulo {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -102,15 +136,15 @@ a:hover {
     box-shadow: 0px 0px 20px 5px #4b4b4b42;
 }
 
-.texto-home p a{
+.texto-home p a {
     color: rgb(58, 58, 58);
 }
 
-.texto-home p a:hover{
+.texto-home p a:hover {
     color: #096CDA;
 }
 
-.texto-home img{
+.texto-home img {
     box-shadow: 0px 0px 20px 0px #2e2e2ea9;
     border-radius: 5px;
 }
