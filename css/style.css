@@ -1,9 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav {
+    width: 100vw;
     height: 80px;
 }
 
@@ -38,7 +40,7 @@ nav .navegacao .btns-navegacao button a:hover {
     border-color: aqua;
 }
 
-nav .divisornav {
+.divisornav {
     height: 15%;
     background-color: #096CDA;
 }
@@ -68,144 +70,150 @@ nav .divisornav {
     }
 }
 
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
 
 .titulo {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 800;
-    position: absolute;
-    display: flex;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 3rem;
 }
 
-.titulo span h1 {
+.titulo h1 {
     width: 33.3vw;
     background-color: #739ecf;
-    margin-left: 33vw;
     border-radius: 15px;
-    padding-top: 20px;
-    padding-bottom: 25px;
     color: #fff;
     box-shadow: 0px 10px 10px -5px #096CDA;
+    padding: 1.2rem;
 }
 
-.conteudo-home {
-    width: 1200px;
+section {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+section article {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section .conteudo-home {
+    width: 80%;
     background-color: #c6c6c6;
-    display: block;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 15px;
-    margin-top: 100px;
     box-shadow: 0px 10px 20px 0px #4b4b4b6c;
-    padding: 20px;
-    padding-bottom: 70px;
-    margin-bottom: 90px;
 }
 
-.texto-home {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
+section .conteudo-home .texto-home {
+    justify-content: center;
+    width: 80%;
     background-color: rgb(224, 226, 226);
     padding: 20px;
     padding-bottom: 30px;
     border-radius: 20px;
     box-shadow: 0px 0px 20px 10px #4b4b4b57;
+    margin-bottom: 2.5rem;
 }
 
-.texto-home p strong#ctauserhome {
+section .conteudo-home .texto-home p strong#ctauserhome {
     display: block;
     text-align: end;
     color: #0957b1;
     padding-right: 20px;
 }
 
-.texto-home p {
+section .conteudo-home .texto-home .background-texto-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.671);
+    box-shadow: 0px 0px 20px 5px #4b4b4b42;
+    border-radius: 10px;
+}
+
+section .conteudo-home .texto-home .background-texto-home p {
     text-align: justify;
     margin-top: 10px;
     font-size: 22px;
     text-indent: 30px;
-    background-color: rgba(255, 255, 255, 0.671);
     padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px 5px #4b4b4b42;
 }
 
-.texto-home p a {
+section .conteudo-home .texto-home p a {
     color: rgb(58, 58, 58);
 }
 
-.texto-home p a:hover {
+section .conteudo-home .texto-home p a:hover {
     color: #096CDA;
 }
 
-.texto-home img {
+section .conteudo-home .texto-home img {
     box-shadow: 0px 0px 20px 0px #2e2e2ea9;
     border-radius: 5px;
+    margin: 2rem 0rem;
 }
 
-.tecnologias {
+section .conteudo-home .tecnologias {
+    width: 80%;
     display: grid;
     grid-template-columns: auto auto auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 90%;
     background-color: rgb(224, 226, 226);
     padding: 20px;
     padding-bottom: 30px;
     border-radius: 20px;
     box-shadow: 0px 0px 20px 10px #4b4b4b57;
+    margin-bottom: 2.5rem;
 
 }
 
-.tecnologias .item-tecnologias {
+section .conteudo-home .tecnologias .item-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
     background-color: rgba(192, 192, 192, 0.699);
     margin: 10px;
     border-radius: 10px;
     padding: 10px;
+    box-shadow: 0px 0px 5px 1px #29292960;
 }
 
-.tecnologias .item-tecnologias img {
-    height: 150px;
-    width: auto;
+section .conteudo-home .tecnologias .item-tecnologias img {
+    height: auto;
+    width: 150px;
 }
 
-.tecnologias .item-tecnologias span {
+section .conteudo-home .tecnologias .item-tecnologias span {
     width: 100%;
 }
 
-.tecnologias h2 {
+section .conteudo-home .tecnologias h2 {
     grid-column: 1 / span 3;
     text-align: center;
     width: 100%;
     margin-top: 20px;
     margin-bottom: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
     font-size: 40px;
 }
 
-.conteudo-home img {
-    margin-top: 5%;
-    margin-bottom: 5%;
+section .conteudo-home img {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
     width: 70%;
 }
 
 .conteudo {
-    width: 1200px;
+    width: 100vw;
     background-color: #c6c6c6;
     display: flex;
     align-items: center;
@@ -220,13 +228,12 @@ nav .divisornav {
     margin-bottom: 90px;
 }
 
-.fundo-logo {
+section .conteudo-home .fundo-logo {
     display: flex;
-    padding: 10px;
-    margin-bottom: -20px;
+    padding: 2rem 2rem;
 }
 
-.fundo-logo img {
+section .conteudo-home .fundo-logo img {
     margin-left: auto;
     margin-right: auto;
     width: 25%;
@@ -235,7 +242,7 @@ nav .divisornav {
 }
 
 .conteudo2 {
-    width: 1200px;
+    width: 100vw;
     background-color: #c6c6c6;
     display: grid;
     align-items: center;
@@ -258,7 +265,7 @@ nav .divisornav {
 
 .conteudo #formulario input {
     text-indent: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     width: 100%;
     height: 40px;
     border-radius: 10px;
@@ -281,7 +288,7 @@ nav .divisornav {
 
 .conteudo #formulario fieldset textarea {
     text-indent: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     font-size: 20px;
     width: 100%;
     background-color: #0f6cd631;
@@ -292,7 +299,7 @@ nav .divisornav {
 
 .conteudo #formulario fieldset label {
     color: #494949bd;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     font-weight: 500;
     font-size: 20px;
 }
@@ -312,7 +319,7 @@ nav .divisornav {
     margin-top: 30px;
     margin-left: 17%;
     font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     font-weight: 700;
     text-transform: uppercase;
     height: 50px;
@@ -338,7 +345,7 @@ nav .divisornav {
 }
 
 .texto2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -351,7 +358,7 @@ nav .divisornav {
 }
 
 .texto3 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -380,7 +387,7 @@ nav .divisornav {
 
 .texto {
     float: right;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     width: 60%;
     background-color: rgb(224, 226, 226);
     margin-right: 3%;
@@ -410,7 +417,7 @@ nav .divisornav {
 .texto span {
     display: block;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     font-weight: 600;
     font-size: 40px;
 }
@@ -445,49 +452,62 @@ nav .divisornav {
 }
 
 .texto2 span {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     font-weight: 600;
     font-size: 40px;
 }
 
-.footer {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 50px;
-    justify-content: center;
-    background: #043C7B;
-    height: 7vw;
+footer {
+    width: 100vw;
 }
 
-.imgfooter {
-    height: 50%;
+footer .footer {
+    background: #043C7B;
+    height: 150px;
+}
+
+
+footer .footer .icones-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+}
+
+footer .footer .icones-footer .icones{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+footer .footer .icones-footer a .imgfooter {
+    height: 50px;
     background-color: #fff;
     border-radius: 150px;
-    margin-left: 20px;
-    margin-right: 20px;
     border: solid 3px #FFF;
 }
 
-.copyright {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
+footer .footer .copyright {
     background-color: #002147;
-    color: #fff;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: center;
-    height: 1.8vw;
-    padding-top: 0.5vw;
+    width: 100%;
+    height: 15%;
 }
 
-.copyright a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
+.copyright span {
+    display: flex;
+    align-items: center;
+    color: #c0c0c0;
+}
+
+
+.copyright span a {
+    font-size: 1rem;
     color: #b7d5f8;
 }
 
-.copyright a:hover {
-    color: #739ecf;
+.copyright span a:hover {
+    color: #4a88cf;
 }
