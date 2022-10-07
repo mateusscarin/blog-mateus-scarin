@@ -19,7 +19,7 @@ nav .navegacao {
 nav .navegacao .btns-navegacao {
     display: flex;
     width: 25%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav .navegacao .btns-navegacao button {
@@ -49,15 +49,15 @@ header {
     justify-content: center;
 }
 
-.titulo {
+header .titulo {
     font-weight: 800;
     text-align: center;
     margin-top: 3rem;
+    margin-bottom: -1rem;
     z-index: 10;
 }
 
-.titulo h1 {
-    width: 33.3vw;
+header .titulo h1 {
     background-color: #739ecf;
     border-radius: 15px;
     color: #fff;
@@ -101,7 +101,7 @@ section .conteudo-home .texto-home p strong#ctauserhome {
     display: block;
     text-align: end;
     color: #0957b1;
-    padding-right: 20px;
+    padding-right: 0.5rem;
 }
 
 section .conteudo-home .texto-home .background-texto-home {
@@ -116,8 +116,8 @@ section .conteudo-home .texto-home .background-texto-home {
 section .conteudo-home .texto-home .background-texto-home p {
     text-align: justify;
     margin-top: 10px;
-    font-size: 22px;
-    text-indent: 30px;
+    font-size: 1.3rem;
+    text-indent: 3rem;
     padding: 15px;
 }
 
@@ -167,6 +167,7 @@ section .conteudo-home .tecnologias .item-tecnologias img {
 
 section .conteudo-home .tecnologias .item-tecnologias span {
     width: 100%;
+    font-size: 1rem;
 }
 
 section .conteudo-home .tecnologias h2 {
@@ -202,13 +203,13 @@ section .conteudo-home img {
 
 section .conteudo-home .fundo-logo {
     display: flex;
-    padding: 2rem 2rem;
+    justify-content: center;
+    padding: 3rem 0rem;
 }
 
 section .conteudo-home .fundo-logo img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
+    height: 14rem;
+    width: auto;
     border-radius: 10px;
     box-shadow: 0px 0px 20px 5px #3b3b3b7a;
 }
@@ -480,12 +481,35 @@ footer .footer .copyright span a:hover {
 }
 
 @media screen and (max-width: 820px) {
+    header .titulo h1 {
+        padding: 1.2rem;
+        font-size: 1.8rem;
+    }
+
     nav {
         height: 70px;
     }
 
     nav .navegacao .btns-navegacao {
         width: 40%;
+    }
+
+    section .conteudo-home .texto-home .background-texto-home p {
+        font-size: 1.1rem;
+        text-indent: 2rem;
+    }
+
+    section .conteudo-home .tecnologias .item-tecnologias img {
+        width: 50%;
+        height: auto;
+    }
+
+    section .conteudo-home {
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        box-shadow: 0px 10px 20px 0px #4b4b4b6c;
     }
 
     section .conteudo-home .tecnologias {
@@ -503,6 +527,11 @@ footer .footer .copyright span a:hover {
 }
 
 @media screen and (max-width: 450px) {
+    header .titulo h1 {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
     nav {
         height: 70px;
     }
@@ -528,24 +557,44 @@ footer .footer .copyright span a:hover {
     }
 
     section .conteudo-home {
-        width: 95%;
-        background: none;
-        align-items: center;
-        justify-content: center;
-        border-radius: 15px;
-        box-shadow: none;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    section .conteudo-home .texto-home .background-texto-home p {
+        font-size: 1rem;
+        text-indent: 1rem;
     }
 
     section .conteudo-home .tecnologias {
         display: block;
     }
 
+    section .conteudo-home .tecnologias .item-tecnologias img {
+        width: 40%;
+        height: auto;
+    }
+
+    section .conteudo-home .tecnologias .item-tecnologias span {
+        font-size: 0.85rem;
+    }
+
     section .conteudo-home .tecnologias h2 {
         font-size: 1.2rem;
     }
 
+    footer .footer {
+        height: 7rem;
+    }
+
     footer .footer .icones-footer .icones {
-        width: 60%;
+        width: 50%;
+        height: 2rem;
+    }
+
+    footer .footer .icones-footer .icones img {
+        border: solid 1.5px #FFF;
+        height: 30px;
     }
 
     footer .footer .copyright span {
