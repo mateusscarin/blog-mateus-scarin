@@ -503,6 +503,10 @@ footer .footer .copyright span a:hover {
         width: 90%;
     }
 
+    section .conteudo #formulario fieldset legend {
+        font-size: 2rem;
+    }
+
     section .conteudo-home .texto-home .background-texto-home p {
         font-size: 1.1rem;
         text-indent: 2rem;
