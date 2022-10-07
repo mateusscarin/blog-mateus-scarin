@@ -5,7 +5,6 @@
 }
 
 nav {
-    width: 100vw;
     height: 80px;
 }
 
@@ -45,33 +44,7 @@ nav .navegacao .btns-navegacao button a:hover {
     background-color: #096CDA;
 }
 
-@media screen and (max-width: 820px) {
-    nav {
-        height: 70px;
-    }
-
-    nav .navegacao .btns-navegacao {
-        width: 40%;
-    }
-
-}
-
-@media screen and (max-width: 450px) {
-    nav {
-        height: 70px;
-    }
-
-    nav .navegacao .btns-navegacao {
-        width: 60%;
-    }
-
-    nav .navegacao .btns-navegacao button a {
-        font-size: 1rem;
-    }
-}
-
 header {
-    width: 100vw;
     display: flex;
     justify-content: center;
 }
@@ -80,6 +53,7 @@ header {
     font-weight: 800;
     text-align: center;
     margin-top: 3rem;
+    z-index: 10;
 }
 
 .titulo h1 {
@@ -92,7 +66,6 @@ header {
 }
 
 section {
-    width: 100vw;
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
@@ -189,7 +162,7 @@ section .conteudo-home .tecnologias .item-tecnologias {
 
 section .conteudo-home .tecnologias .item-tecnologias img {
     height: auto;
-    width: 150px;
+    width: 80%;
 }
 
 section .conteudo-home .tecnologias .item-tecnologias span {
@@ -203,7 +176,7 @@ section .conteudo-home .tecnologias h2 {
     margin-top: 20px;
     margin-bottom: 10px;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 2rem;
 }
 
 section .conteudo-home img {
@@ -213,7 +186,6 @@ section .conteudo-home img {
 }
 
 .conteudo {
-    width: 100vw;
     background-color: #c6c6c6;
     display: flex;
     align-items: center;
@@ -242,7 +214,6 @@ section .conteudo-home .fundo-logo img {
 }
 
 .conteudo2 {
-    width: 100vw;
     background-color: #c6c6c6;
     display: grid;
     align-items: center;
@@ -457,13 +428,9 @@ section .conteudo-home .fundo-logo img {
     font-size: 40px;
 }
 
-footer {
-    width: 100vw;
-}
-
 footer .footer {
     background: #043C7B;
-    height: 150px;
+    height: 10rem;
 }
 
 
@@ -475,7 +442,7 @@ footer .footer .icones-footer {
     height: 85%;
 }
 
-footer .footer .icones-footer .icones{
+footer .footer .icones-footer .icones {
     display: flex;
     justify-content: space-between;
     width: 20%;
@@ -496,18 +463,97 @@ footer .footer .copyright {
     height: 15%;
 }
 
-.copyright span {
+footer .footer .copyright span {
     display: flex;
     align-items: center;
     color: #c0c0c0;
 }
 
 
-.copyright span a {
+footer .footer .copyright span a {
     font-size: 1rem;
     color: #b7d5f8;
 }
 
-.copyright span a:hover {
+footer .footer .copyright span a:hover {
     color: #4a88cf;
+}
+
+@media screen and (max-width: 820px) {
+    nav {
+        height: 70px;
+    }
+
+    nav .navegacao .btns-navegacao {
+        width: 40%;
+    }
+
+    section .conteudo-home .tecnologias {
+        grid-template-columns: auto auto;
+    }
+
+    section .conteudo-home .tecnologias h2 {
+        grid-column: 1 / span 2;
+        font-size: 1.5rem;
+    }
+
+    footer .footer .icones-footer .icones {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    nav {
+        height: 70px;
+    }
+
+    nav .navegacao .btns-navegacao {
+        width: 60%;
+    }
+
+    nav .navegacao .btns-navegacao button a {
+        font-size: 1rem;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+
+    section article {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    section .conteudo-home {
+        width: 95%;
+        background: none;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        box-shadow: none;
+    }
+
+    section .conteudo-home .tecnologias {
+        display: block;
+    }
+
+    section .conteudo-home .tecnologias h2 {
+        font-size: 1.2rem;
+    }
+
+    footer .footer .icones-footer .icones {
+        width: 60%;
+    }
+
+    footer .footer .copyright span {
+        font-size: 0.7rem;
+    }
+
+    footer .footer .copyright span a {
+        font-size: 0.8rem;
+    }
+
 }
