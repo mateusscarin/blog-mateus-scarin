@@ -145,7 +145,6 @@ section .conteudo-home .tecnologias {
     border-radius: 20px;
     box-shadow: 0px 0px 20px 10px #4b4b4b57;
     margin-bottom: 2.5rem;
-
 }
 
 section .conteudo-home .tecnologias .item-tecnologias {
@@ -192,11 +191,25 @@ section .conteudo {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 15px;
     box-shadow: 0px 10px 20px 0px #4b4b4b6c;
     padding: 10px 100px;
+}
+
+section .conteudo-sobre {
+    width: 90%;
+    background-color: #c6c6c6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px 0px #4b4b4b6c;
+}
+
+section .conteudo-sobre .texto {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 section .conteudo-home .fundo-logo {
@@ -212,17 +225,14 @@ section .conteudo-home .fundo-logo img {
     box-shadow: 0px 0px 20px 5px #3b3b3b7a;
 }
 
-.conteudo2 {
+section .conteudo2 {
+    width: 90%;
     background-color: #c6c6c6;
     display: grid;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 15px;
-    margin-top: -50px;
     box-shadow: 0px 10px 20px 0px #4b4b4b6c;
-    padding: 20px;
     padding-top: 50px;
     margin-bottom: 90px;
 }
@@ -301,12 +311,12 @@ section .conteudo-home .fundo-logo img {
     background-color: #096bdaa4;
 }
 
-.imagem2 {
+section .imagem2 {
     width: 100%;
     display: flex;
 }
 
-.imagem2 img {
+section .imagem2 img {
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
@@ -315,10 +325,11 @@ section .conteudo-home .fundo-logo img {
     border-radius: 10px;
 }
 
-.texto2 {
-
-    text-align: center;
+section .conteudo2 .texto2 {
+    display: flex;
+    flex-direction: column;
     margin-left: auto;
+    text-align: center;
     margin-right: auto;
     width: 90%;
     background-color: rgb(224, 226, 226);
@@ -328,8 +339,7 @@ section .conteudo-home .fundo-logo img {
     box-shadow: 0px 0px 20px 10px #4b4b4b57;
 }
 
-.texto3 {
-
+section .conteudo2 .texto3 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -342,28 +352,17 @@ section .conteudo-home .fundo-logo img {
     box-shadow: 0px 0px 20px 10px #4b4b4b57;
 }
 
-.imagem {
-    float: left;
-    width: 50%;
-    padding-right: 5%;
-}
-
 .imagem img {
-    margin-top: 100px;
-    width: 70%;
-    margin-left: 8%;
+    height: 25rem;
     border-radius: 10px;
+    margin: 0rem 1rem 0rem 2rem;
     box-shadow: 0px 0px 10px 5px #4b4b4b8f;
 }
 
 .texto {
-    float: right;
-
     width: 60%;
     background-color: rgb(224, 226, 226);
-    margin-right: 3%;
-    margin-left: -10%;
-    margin-top: 7%;
+    margin: 2rem;
     padding: 20px;
     padding-bottom: 30px;
     border-radius: 20px;
@@ -372,7 +371,7 @@ section .conteudo-home .fundo-logo img {
 
 .texto p {
     text-align: justify;
-    margin-top: 45px;
+    margin-top: 2rem;
     font-size: 22px;
     text-indent: 30px;
     background-color: rgba(255, 255, 255, 0.671);
@@ -479,6 +478,27 @@ footer .footer .copyright span a:hover {
     color: #4a88cf;
 }
 
+@media screen and (max-width: 1000px) {
+
+    section .conteudo-sobre {
+        flex-direction: column;
+    }
+
+    section .conteudo-sobre .imagem {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    section .conteudo-sobre .imagem img {
+        margin-top: 2rem;
+    }
+
+    section .conteudo-sobre .texto {
+        width: 90%;
+    }
+}
+
 @media screen and (max-width: 820px) {
     header .titulo h1 {
         padding: 1.2rem;
@@ -534,6 +554,36 @@ footer .footer .copyright span a:hover {
         font-size: 1.5rem;
     }
 
+    section .conteudo-sobre {
+        flex-direction: column;
+    }
+
+    section .conteudo-sobre .imagem img {
+        height: 20rem;
+    }
+
+    section .conteudo-sobre .texto span {
+        font-size: 2rem;
+    }
+
+    section .conteudo-sobre .texto p {
+        margin-top: 1rem;
+        font-size: 1.1rem;
+    }
+
+    section .conteudo2 .texto2 span {
+        font-size: 2rem;
+    }
+
+    section .conteudo2 .texto2 p {
+        margin-top: 1rem;
+        font-size: 1.1rem;
+    }
+
+    section .texto3 p {
+        font-size: 1.1rem;
+    }
+
     footer .footer .icones-footer .icones {
         width: 40%;
     }
@@ -568,20 +618,20 @@ footer .footer .copyright span a:hover {
         margin: 3rem 1rem;
     }
 
-    
+
     section .conteudo #formulario fieldset {
         padding: 15px;
     }
-    
+
     section .conteudo #formulario fieldset legend {
         font-size: 1.5rem;
     }
-    
+
     section .conteudo #formulario fieldset label {
         font-size: 1.1rem;
     }
-    
-    section .conteudo #formulario .btn-submit-contato .btnsubmit{
+
+    section .conteudo #formulario .btn-submit-contato .btnsubmit {
         font-size: 1rem;
     }
 
@@ -623,6 +673,55 @@ footer .footer .copyright span a:hover {
     section .conteudo-home .tecnologias h2 {
         font-size: 1.2rem;
     }
+
+    section .conteudo-sobre {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    section .conteudo-sobre .imagem img {
+        margin: 0;
+        margin-top: 2rem;
+    }
+
+    section .conteudo-sobre .texto {
+        width: 80%;
+    }
+
+    section .conteudo-sobre .texto span {
+        font-size: 1.4rem;
+    }
+
+    section .conteudo-sobre .texto p {
+        font-size: 1rem;
+    }
+
+    section .conteudo2 {
+        width: 100%;
+        border-radius: 0px;
+        margin-bottom: 0;
+    }
+
+    section .conteudo2 .texto2 span {
+        font-size: 1.4rem;
+    }
+
+    section .conteudo2 .texto2 p {
+        font-size: 1rem;
+    }
+
+    section .conteudo2 .texto2 {
+        width: 80%;
+    }
+
+    section .conteudo2 .texto3 {
+        width: 80%;
+    }
+
+    section .conteudo2 .texto3 p {
+        font-size: 1rem;
+    }
+
 
     footer .footer {
         height: 7rem;
