@@ -135,10 +135,11 @@ section .conteudo-home .texto-home img {
     margin: 2rem 0rem;
 }
 
-section .conteudo-home .tecnologias {
+section .conteudo-home .container-tecnologias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 80%;
-    display: grid;
-    grid-template-columns: auto auto auto;
     background-color: rgb(224, 226, 226);
     padding: 20px;
     padding-bottom: 30px;
@@ -147,8 +148,16 @@ section .conteudo-home .tecnologias {
     margin-bottom: 2.5rem;
 }
 
-section .conteudo-home .tecnologias .item-tecnologias {
+section .conteudo-home .container-tecnologias .tecnologias {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section .conteudo-home .container-tecnologias .tecnologias .item-tecnologias {
+    display: flex;
+    width: 26%;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
@@ -159,18 +168,17 @@ section .conteudo-home .tecnologias .item-tecnologias {
     box-shadow: 0px 0px 5px 1px #29292960;
 }
 
-section .conteudo-home .tecnologias .item-tecnologias img {
+section .conteudo-home .container-tecnologias .tecnologias .item-tecnologias img {
     height: auto;
     width: 80%;
 }
 
-section .conteudo-home .tecnologias .item-tecnologias span {
+section .conteudo-home .container-tecnologias .tecnologias .item-tecnologias span {
     width: 100%;
     font-size: 1rem;
 }
 
-section .conteudo-home .tecnologias h2 {
-    grid-column: 1 / span 3;
+section .conteudo-home .container-tecnologias h2 {
     text-align: center;
     width: 100%;
     margin-top: 20px;
@@ -545,6 +553,10 @@ footer .footer .copyright span a:hover {
         box-shadow: 0px 10px 20px 0px #4b4b4b6c;
     }
 
+    section .conteudo-home .container-tecnologias .tecnologias .item-tecnologias {
+        width: 40%;
+    }
+
     section .conteudo-home .tecnologias {
         grid-template-columns: auto auto;
     }
@@ -657,20 +669,20 @@ footer .footer .copyright span a:hover {
         text-indent: 1rem;
     }
 
-    section .conteudo-home .tecnologias {
-        display: block;
+    section .conteudo-home .container-tecnologias .tecnologias .item-tecnologias {
+        width: 85%;
     }
 
-    section .conteudo-home .tecnologias .item-tecnologias img {
-        width: 40%;
+    section .conteudo-home .container-tecnologias .tecnologias .item-tecnologias img {
+        width: 35%;
         height: auto;
     }
 
-    section .conteudo-home .tecnologias .item-tecnologias span {
+    section .conteudo-home .container-tecnologias .tecnologias .item-tecnologias span {
         font-size: 0.85rem;
     }
 
-    section .conteudo-home .tecnologias h2 {
+    section .conteudo-home .container-tecnologias h2 {
         font-size: 1.2rem;
     }
 
